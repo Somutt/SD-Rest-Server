@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "dev.samuel.yugigo.protobuf";
+option java_outer_classname = "CardProtos";
+
+message Card {
+  int64 id = 1;
+  int64 cardId = 2;
+  string name = 3;
+  string description = 4;
+  string attribute = 5;
+  string race = 6;
+  int32 atk = 7;
+  int32 def = 8;
+  int32 lvl = 9;
+  string img = 10;
+}
+
+message CardList {
+  repeated Card cards = 1;
+}
