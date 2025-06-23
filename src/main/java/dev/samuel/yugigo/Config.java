@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class Config {
 
+    // rest template p/ interpretar os dados da API Pública
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
@@ -21,6 +22,7 @@ public class Config {
         return new ProtobufHttpMessageConverter();
     }
 
+    // para aceitar requisições da rota criada pelo cliente Vite
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
