@@ -16,3 +16,5 @@ A partir disso, essa API funciona como um CRUD de cartas. A partir do parâmetro
 cartas em formato ProtocolBuffer para compartilhamento com formato binário canônico.
 
 Além disso, também é possível criar Decks e relacionar diretamente cartas e decks a partir de DeckController.
+
+O código em da aplicação está em src/main/java/..
